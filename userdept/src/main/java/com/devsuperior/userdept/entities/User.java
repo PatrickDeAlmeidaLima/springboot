@@ -17,8 +17,8 @@ public class User {
 	private String email;
 	
 	@ManyToOne
-	@JoinColumn(name="departament_id")
-	private Departament departament;
+	@JoinColumn(name="department_id")
+	private Department department;
 	
 	public User() {
 }
@@ -47,12 +47,12 @@ public class User {
 		this.email = email;
 	}
 
-	public Departament getDepartament() {
-		return departament;
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void setDepartament(Departament departament) {
-		this.departament = departament;
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 	
 }
